@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AfriTalent-Freelances</title>
-    <!-- Bootstrap 5 via CDN : feuille de style --> 
+    <title>AfriTalent - Freelances</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <!-- Le contenu de la page sera ajoute ici --> 
-     <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> 
+
+    <!-- HEADER -->
+   <header>
+  <!-- Navigation Bootstrap commune a toutes les pages --> 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> 
 <div class="container"> 
-<a class="navbar-brand" href="index.html">AfriTalent</a> 
+<a class="navbar-brand logo" href="index.html">
+    <span>Afri</span>Talent
+</a>
 <button class="navbar-toggler" type="button" 
 data-bs-toggle="collapse" 
 data-bs-target="#navMenu" 
@@ -22,7 +36,7 @@ aria-expanded="false"
 aria-label="Toggle navigation"> 
 <span class="navbar-toggler-icon"></span> 
 </button> 
-<div class="collapse navbar-collapse" id="navMenu"> 
+<div class="collapse navbar-collapse justify-content-between align-items-center" id="navMenu">
 <ul class="navbar-nav ms-auto"> 
 <li class="nav-item"><a class="nav-link active" 
 href="index.html">Accueil</a></li> 
@@ -33,252 +47,366 @@ href="tarifs.html">Tarifs</a></li>
 <li class="nav-item"><a class="nav-link" href="about.html">A 
 propos</a></li> 
 <li class="nav-item"><a class="nav-link" 
-href="contact.html">Contact</a></li> 
+href="contact.html">Contact</a></li>
 <li class="nav-item"><a class="nav-link" 
-href="index.html">Blog</a></li> 
+href="index.html">Blog</a></li>  
 </ul> 
 <a href="contact.html" class="btn btn-primary ms-3">Rejoindre AfriTalent</a>
 </div> 
 </div> 
 </nav> 
+<!-- HERO FREELANCES -->
+<section id="hero-freelance">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content text-center text-white">
+
+        <h1 class="fw-bold">
+            Découvrez les meilleurs freelances Tech d’Afrique
+        </h1>
+
+        <p class="lead mt-3">
+            Développeurs, Data Scientists, Designers et Experts Cloud
+        </p>
+
+        <a href="freelances.html" class="btn btn-success btn-lg mt-4">
+            Explorer les profils
+        </a>
+
+    </div>
+
+</section>
 </header>
-     
-        <h2 class="text-center mt-5 pt-5">Nos Freelances</h2>
-        <p class="text-center">Découvrez les meilleurs talLents disponibles</p>
-        <div class="text-center my-4">
-           <button class="btn btn-outline-success">All</button>
-             <button class="btn btn-outline-success">Data & IA</button>
-             <button class="btn btn-outline-success">Developpement Web</button>
-            <button class="btn btn-outline-success">Design Graphique</button>
-            <button class="btn btn-outline-success">Redaction Tech</button>
-            <button class="btn btn-outline-success">DevOps & cloud</button>
-</div>
 
-     <div class="container">
+    <!-- MAIN -->
+    <main>
+        <!-- FILTRES -->
+        <section class="container text-center my-4">
+
+            <button class="btn btn-outline-success m-1">
+                Tous
+            </button>
+
+            <button class="btn btn-outline-success m-1">
+                Data & IA
+            </button>
+
+            <button class="btn btn-outline-success m-1">
+                Développement Web
+            </button>
+
+            <button class="btn btn-outline-success m-1">
+                Design Graphique
+            </button>
+
+            <button class="btn btn-outline-success m-1">
+                Rédaction Tech
+            </button>
+
+            <button class="btn btn-outline-success m-1">
+                DevOps & Cloud
+            </button>
+
+        </section>
+
+        <!-- FREELANCES -->
+        <section class="container">
+
+            <div class="row">
+
+                <!-- CARD 1 -->
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+
+                    <div class="card freelance-card p-3 text-center">
+
+                        <img src="icones/femme.webp"
+                            class="img-fluid rounded mb-3 freelance-img"
+                            alt="Fatou Gaye">
+
+                        <h4>Fatou Gaye</h4>
+
+                        <p>Data Scientist</p>
+
+                        <p>
+                            Spécialisée en analyse de données et intelligence artificielle.
+                        </p>
+
+                        <p class="fw-bold">
+                            15 000 FCFA/h
+                        </p>
+
+                        <p>⭐⭐⭐⭐⭐</p>
+
+                        <button class="btn btn-outline-primary">
+                            Voir le profil
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+
+                    <div class="card freelance-card p-3 text-center">
+
+                        <img src="icones/hommes.webp"
+                            class="img-fluid rounded mb-3 freelance-img"
+                            alt="Moussa Diallo">
+
+                        <h4>Moussa Diallo</h4>
+
+                        <p>Développeur Web</p>
+
+                        <p>
+                            Création de sites modernes et performants.
+                        </p>
+
+                        <p class="fw-bold">
+                            10 000 FCFA/h
+                        </p>
+
+                        <p>⭐⭐⭐⭐⭐</p>
+
+                        <button class="btn btn-outline-primary">
+                            Voir le profil
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+
+                    <div class="card freelance-card p-3 text-center">
+
+                        <img src="icones/assane.webp"
+                            class="img-fluid rounded mb-3 freelance-img"
+                            alt="Assane Talla">
+
+                        <h4>Assane Talla</h4>
+
+                        <p>UI/UX Designer</p>
+
+                        <p>
+                            Création d’interfaces modernes et intuitives.
+                        </p>
+
+                        <p class="fw-bold">
+                            18 000 FCFA/h
+                        </p>
+
+                        <p>⭐⭐⭐⭐⭐</p>
+
+                        <button class="btn btn-outline-primary">
+                            Voir le profil
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+
+                    <div class="card freelance-card p-3 text-center">
+
+                        <img src="icones/anta.webp"
+                            class="img-fluid rounded mb-3 freelance-img"
+                            alt="Anta Ngom">
+
+                        <h4>Anta Ngom</h4>
+
+                        <p>Data Analyst</p>
+
+                        <p>
+                            Analyse et visualisation de données.
+                        </p>
+
+                        <p class="fw-bold">
+                            19 000 FCFA/h
+                        </p>
+
+                        <p>⭐⭐⭐⭐⭐</p>
+
+                        <button class="btn btn-outline-primary">
+                            Voir le profil
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+
+                    <div class="card freelance-card p-3 text-center">
+
+                        <img src="icones/ibou.webp"
+                            class="img-fluid rounded mb-3 freelance-img"
+                            alt="Ibrahima Ciss">
+
+                        <h4>Ibrahima Ciss</h4>
+
+                        <p>DevOps Engineer</p>
+
+                        <p>
+                            Déploiement et gestion d’infrastructures cloud.
+                        </p>
+
+                        <p class="fw-bold">
+                            11 000 FCFA/h
+                        </p>
+
+                        <p>⭐⭐⭐⭐⭐</p>
+
+                        <button class="btn btn-outline-primary">
+                            Voir le profil
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+
+                    <div class="card freelance-card p-3 text-center">
+
+                        <img src="icones/oum.webp"
+                            class="img-fluid rounded mb-3 freelance-img"
+                            alt="Oumou Kaltioum">
+
+                        <h4>Oumou Kaltioum</h4>
+
+                        <p>AI Specialist</p>
+
+                        <p>
+                            Solutions intelligentes basées sur l’intelligence artificielle.
+                        </p>
+
+                        <p class="fw-bold">
+                            10 000 FCFA/h
+                        </p>
+
+                        <p>⭐⭐⭐⭐⭐</p>
+
+                        <button class="btn btn-outline-primary">
+                            Voir le profil
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+   <footer id="foot" class="text-white mt-5 p-5">
+
+    <div class="container">
+
         <div class="row">
-            <!--Freelance1-->
-            <div class="col-lg-4 col-md-6 col-12 mb-4 card p-3 text-center">
-                <img src="icones/femme.webp" class=" mb-3" width="275">
-                <h4 class="text-center">Fatou Gaye</h4>
-                <p class="text-center">Data scientist</p>
-                <p class="text-center">Spécialisée en analyse de données et IA.</p>
-                <p class="text-center fw-bold">15 000 FCFA/h</p>
-                <p>⭐⭐⭐⭐⭐</p>
-                <button class="btn btn-outline-primary"type="button" data-bs-toggle="offcanvas" data-bs-target="#menuFatou">Voir le profil</button>
-                <div class="offcanvas offcanvas-start" tabindex="-1"id="menuFatou">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title">Profil</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <p>
-                            <strong>👩‍💻 Fatou Gaye – Data Scientist ⭐⭐⭐⭐⭐</strong><br>
 
-                           Spécialisée en data science et intelligence artificielle, Fatou Gaye accompagne les entreprises dans l’analyse et la valorisation de leurs données. Elle conçoit des modèles prédictifs, réalise des visualisations claires et aide à prendre des décisions stratégiques basées sur des données fiables. Passionnée par l’innovation, elle transforme des données complexes en informations compréhensibles et utiles. <br>
+            <!-- COL 1 -->
 
-                           <strong>Compétences :</strong>
-                           <ul>
-                            <li>Analyse de données</li>
-                            <li>Machine Learning</li>
-                            <li>Visualisation de données</li>
-                           </ul>
-                          <strong> Outils :</strong>
-                           <ul>
-                            <li>Python</li>
-                            <li>Pandas / NumPy</li>
-                            <li>Power BI</li>
-                           </ul>
-                        </p>
-                        <p><strong>Expérience :</strong> +3 ans</p>
-                        <p><strong>Disponibilité :</strong> Immédiate</p>
+            <div class="col-md-3 mb-4">
 
-                    </div>
-                </div>
+                <h3>AfriTalent</h3>
+
+                <p>
+                    AfriTalent est une plateforme digitale innovante
+                    qui met en relation freelances tech et entreprises.
+                </p>
 
             </div>
-            <div class="col-lg-4 col-md-6 col-12 mb-4 card p-3 text-center">
-                <img src="icones/hommes.webp" class=" mb-3" width="275">
-                <h4 class="text-center">Moussa Diallo</h4>
-                <p class="text-center">Developpeur Web</p>
-                <p class="text-center">Création de sites modernes et performants..</p>
-                <p class="text-center fw-bold">10 000 FCFA/h</p>
-                <p>⭐⭐⭐⭐⭐</p>
-                <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuMoussa">Voir le profil</button>
-                <div class="offcanvas offcanvas-start" tabindex="-1"id="menuMoussa">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title">Profil</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <p>
-                            <strong>👨‍💻 Moussa Diallo – Développeur Web⭐⭐⭐⭐⭐</strong> <br>
 
-                            Moussa Diallo est un développeur web spécialisé dans la création de sites modernes, rapides et responsives. Il développe des applications web performantes adaptées aux besoins des entreprises. Il accompagne ses clients de la conception jusqu’à la mise en ligne, avec une attention particulière à la performance et à l’expérience utilisateur. <br>
+            <!-- COL 2 -->
 
-                            <strong>Compétences :</strong>
-                            <ul>
-                                <li>Développement Front-end</li>
-                                <li>Intégration Web</li>
-                                <li>Responsive Design</li>
-                            </ul>
+            <div class="col-md-3 mb-4">
 
-                            <strong>Outils :</strong>
-                             <ul>
-                                <li>HTML/CSS</li>
-                                <li>JavaScript</li>
-                                <li>Bootstrap</li>
-                             </ul>   
-                        </p>
-                        <p><strong>Expérience :</strong> +3 ans</p>
-                        <p><strong>Disponibilité :</strong> Immédiate</p>
+                <h3>Liens utiles</h3>
 
-                    </div>
-                </div>
+                <ul class="list-unstyled">
+
+                    <li><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li><a class="nav-link" href="freelances.html">Freelances</a></li>
+                    <li><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                    <li><a class="nav-link" href="about.html">À propos</a></li>
+
+                </ul>
 
             </div>
-            <div class="col-lg-4 col-md-6 col-12 mb-4 card p-3 text-center">
-                <img src="icones/assane.webp" class=" mb-3" width="275">
-                <h4 class="text-center">Assane Talla</h4>
-                <p class="text-center">UI/UX designer</p>
-                <p class="text-center">Création d’interfaces modernes et intuitives.</p>
-                <p class="text-center fw-bold">18 000 FCFA/h</p>
-                <p>⭐⭐⭐⭐⭐</p>
-                <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuTalla">Voir le profil</button>
-                <div class="offcanvas offcanvas-start" tabindex="-1"id="menuTalla">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title">Profil</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <p>
-                            <strong>🎨 Assane Talla – UI/UX Designer ⭐⭐⭐⭐⭐</strong> <br>
-                            Assane Talla est un designer UI/UX passionné par la création d’interfaces modernes, esthétiques et intuitives. Il conçoit des expériences utilisateur optimisées pour rendre les applications simples et agréables à utiliser. Il travaille en étroite collaboration avec les développeurs pour garantir un rendu final professionnel. <br>
 
-                           <strong>Compétences :</strong>
-                            <li>Design UI/UX</li>
-                            <li>Prototypage</li>
-                            <li>Expérience utilisateur</li>
-                           <strong>Outils :</strong>
-                           <li>Figma</li>
-                           <li>Adobe XD</li>
-                           <li>Photoshop</li>
-                        </p>
-                        <p><strong>Expérience :</strong> +3 ans</p>
-                        <p><strong>Disponibilité :</strong> Immédiate</p>
-                    </div>
-                </div>
+            <!-- COL 3 -->
+
+            <div class="col-md-3 mb-4">
+
+                <h3>Ressources</h3>
+
+                <ul class="list-unstyled">
+
+                    <li><a class="nav-link" href="#">Guide</a></li>
+                    <li><a class="nav-link" href="#">Blog</a></li>
+                    <li><a class="nav-link" href="#">Centre d'aide</a></li>
+
+                </ul>
 
             </div>
-            <div class="col-lg-4 col-md-6 col-12 mb-4 card p-3 text-center">
-                <img src="icones/anta.webp" class=" mb-3" width="275">
-                <h4 class="text-center">Anta Ngom</h4>
-                <p class="text-center">Data Analyst</p>
-                <p class="text-center">Analyse et visualisation de données.</p>
-                <p class="text-center fw-bold">19 000 FCFA/h</p>
-                <p>⭐⭐⭐⭐⭐</p>
-                <button class="btn btn-outline-primary">Voir le profil</button>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 mb-4 card p-3 text-center">
-                <img src="icones/ibou.webp" class=" mb-3" width="275">
-                <h4 class="text-center">Ibrahima Ciss</h4>
-                <p class="text-center">DevOps Engineer</p>
-                <p class="text-center">Déploiement et gestion d’infrastructures cloud</p>
-                <p class="text-center fw-bold">11 000 FCFA/h</p>
-                <p>⭐⭐⭐⭐⭐</p>
-                <button class="btn btn-outline-primary">Voir le profil</button>
 
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 mb-4 card p-3 text-center">
-                <img src="icones/oum.webp" class=" mb-3" width="275">
-                <h4 class="text-center">Oumou Kaltioum</h4>
-                <p class="text-center">AI Specialist</p>
-                <p class="text-center">Solutions intelligentes basées sur l’IA</p>
-                <p class="text-center fw-bold">10 000 FCFA/h</p>
-                <p>⭐⭐⭐⭐⭐</p>
-                <button class="btn btn-outline-primary">Voir le profil</button>
+            <!-- COL 4 -->
 
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 mb-4 card p-3 text-center">
-                <img src="icones/flo.webp" class=" mb-3" width="275" height="200">
-                <h4 class="text-center">Floriane Baépar</h4>
-                <p class="text-center">Mobile Developer</p>
-                <p class="text-center">Développement d’applications Android et iOS.</p>
-                <p class="text-center fw-bold">14 000 FCFA/h</p>
-                <p>⭐⭐⭐⭐⭐</p>
-                <button class="btn btn-outline-primary">Voir le profil</button>
+            <div class="col-md-3 mb-4">
 
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 mb-4 card p-3 text-center">
-                <img src="icones/bri.webp" class=" mb-3" width="275">
-                <h4 class="text-center">Bruno Thiam</h4>
-                <p class="text-center">Machine Learning Engineer</p>
-                <p class="text-center">Modèles prédictifs et intelligence artificielle.</p>
-                <p class="text-center fw-bold">20 000 FCFA/h</p>
-                <p>⭐⭐⭐⭐⭐</p>
-                <button class="btn btn-outline-primary">Voir le profil</button>
+                <h3>Contact</h3>
 
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 mb-4 card p-3 text-center">
-                <img src="icones/mame.webp" class=" mb-3" width="275">
-                <h4 class="text-center">Mame Fatou Bathily</h4>
-                <p class="text-center">Cybersecurity Expert</p>
-                <p class="text-center">Sécurisation des systèmes et données.</p>
-                <p class="text-center fw-bold">20 000 FCFA/h</p>
-                <p>⭐⭐⭐⭐⭐</p>
-                <button class="btn btn-outline-primary">Voir le profil</button>
+                <ul class="list-unstyled">
+
+                    <li>Tél : +221 77 754 68 45</li>
+
+                    <li>
+                        <a class="nav-link"
+                           href="mailto:AfriTalent@gmail.com">
+
+                            AfriTalent@gmail.com
+
+                        </a>
+                    </li>
+
+                    <li>Dakar, Sénégal</li>
+
+                </ul>
 
             </div>
 
         </div>
-     </div>
-<!-- Pied de page --> 
-<footer class=" text-black mt-5 p-4">
-<div class="container">
-   <div class="row p-3 mb-2">
-   <div class="row p-3 mb-2"> 
-    <div class="col-md-3">
-        <h3>AfriTalent</h3>
-        <p>AfriTalent est une plateforme digitale innovante qui met en relation freelances tech et entreprises pour collaborer sur des projets variés en toute simplicité.</p>
-    </div>
-    <div class="col-md-3">
-        <h3>Liens utilisabes</h3>
-      <ul>
-        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li> 
-<li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li> 
-<li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li> 
-<li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>   
-      </ul>
-    </div>
-    <div class="col-md-3">
-        <h3>Ressources</h3>
-        <ul>
-            <li class="nav-item"><a class="nav-link" href="freelances.html">Guide</a></li> 
-            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li> 
-            <li class="nav-item"><a class="nav-link" href="index.html">Centre d'aide</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h3>Contact</h3>
-        <ul>
-            <li>Tél:+221 33 546 37 56 - 77 754 68 45</li>
-            <li><a class="nav-link active" href="https://mail.google.com">E-mail:AfriTalent@gmail.com</a></li>
-            <li>Dakar,Senegal</li>
-        </ul>
-    </div>
-   </div>
-   </div>
-</div> 
-<hr class="bg-white">
 
-    <div class="text-center pb-3">
-      <p>© <span id="year"></span> AfriTalent. Tous droits réservés.</p>
+        <hr>
+
+        <div class="text-center">
+
+            <p>
+                © 2026 AfriTalent. Tous droits réservés.
+            </p>
+
+        </div>
+
     </div>
 
-  </div>
 </footer>
-<!-- Bootstrap 5 via CDN : script JavaScript -->
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Votre script JavaScript -->
+
+    <!-- JS -->
     <script src="js/main.js"></script>
+
 </body>
+
 </html>
