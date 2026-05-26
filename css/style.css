@@ -1503,3 +1503,101 @@ iframe{
 .contact-header{
     margin-bottom: 120px;
 }
+/*RESPONSIVE DESIGN - COMMIT 5 */
+
+/* TABLETTE */
+@media screen and (max-width: 768px){
+
+    /* NAVBAR */
+    .navbar-nav{
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .navbar .btn{
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    /* HERO */
+    .hero-content h1,
+    #hero-contact h1,
+    #hero-freelance h1,
+    #hero-tarifs h1{
+        font-size: 2rem;
+    }
+
+    .hero-content p{
+        font-size: 1rem;
+    }
+
+    /* CARDS */
+    .freelance-card,
+    .service-card,
+    .step-card,
+    .testimonial-card{
+        margin-bottom: 20px;
+    }
+
+    /* FORMULAIRE */
+    .contact-form-box{
+        padding: 25px;
+    }
+
+    /* MAP */
+    iframe{
+        height: 300px;
+    }
+
+    /* FOOTER */
+    footer{
+        text-align: center;
+    }
+
+}
+
+/* MOBILE */
+@media screen and (max-width: 576px){
+
+    /* HERO */
+    .hero-content h1,
+    #hero-contact h1,
+    #hero-freelance h1,
+    #hero-tarifs h1{
+        font-size: 1.5rem;
+    }
+
+    .hero-content p,
+    #hero-contact p{
+        font-size: 0.95rem;
+    }
+
+    /* BOUTONS */
+    .btn{
+        width: 100%;
+    }
+
+    /* IMAGES */
+    .freelance-img,
+    .tem-img{
+        width: 90px;
+        height: 90px;
+    }
+
+    /* ICONES */
+    .social-icon{
+        width: 45px;
+        margin: 5px;
+    }
+
+    /* TITRES */
+    h2, h3{
+        font-size: 1.3rem;
+    }
+
+    /* FOOTER */
+    footer{
+        text-align: center;
+    }
+
+}
