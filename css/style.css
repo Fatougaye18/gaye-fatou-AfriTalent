@@ -1601,3 +1601,184 @@ iframe{
     }
 
 }
+/*  COMMIT 6 */
+
+/* LIGHT MODE */
+
+body.light-mode{
+    background:var(--light-color);
+    color:var(--secondary-color);
+}
+
+body.light-mode .navbar{
+    background:var(--light-color);
+}
+
+body.light-mode .logo,
+body.light-mode .nav-link{
+    color:var(--secondary-color);
+}
+
+body.light-mode #foot{
+    background:var(--light-color);
+    color:var(--secondary-color);
+}
+
+/* NAVBAR SCROLL */
+
+.navbar.scrolled{
+    background:var(--secondary-color);
+    padding:10px 0;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,0.3);
+
+    transition:0.4s;
+}
+
+/* BOUTON RETOUR HAUT */
+
+#backToTop{
+    position:fixed;
+
+    bottom:20px;
+    right:20px;
+
+    width:50px;
+    height:50px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--primary-color);
+
+    color:var(--light-color);
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    display:none;
+
+    z-index:999;
+
+    transition:0.3s;
+}
+
+#backToTop:hover{
+    transform:translateY(-5px);
+}
+/*  LIGHT MODE */
+
+body.light-mode{
+    background: var(--light-color);
+    color: var(--secondary-color);
+}
+
+/* NAVBAR */
+
+body.light-mode .navbar{
+    background: rgba(255,255,255,0.95);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+body.light-mode .nav-link{
+    color: var(--secondary-color);
+}
+
+body.light-mode .logo{
+    color: var(--secondary-color);
+}
+
+/* HERO */
+
+body.light-mode .hero-text,
+body.light-mode #hero-freelance p,
+body.light-mode #hero-tarifs p{
+    color:var(--secondary-color);
+}
+
+/* CARDS */
+
+body.light-mode .step-card,
+body.light-mode .service-card,
+body.light-mode .freelance-card,
+body.light-mode .testimonial-card,
+body.light-mode .card{
+    background:var(--light-color);
+    color: var(--secondary-color);
+}
+
+/* TEXTES */
+
+body.light-mode .step-card p,
+body.light-mode .service-card p,
+body.light-mode .freelance-card p,
+body.light-mode .testimonial-card p{
+    color: var(--secondary-color);
+}
+
+body.light-mode .freelance-card h4{
+    color: var(--secondary-color);
+}
+
+/* FILTRES */
+
+body.light-mode .btn-outline-success{
+    color: var(--secondary-color);
+    border-color: var(--primary-color);
+}
+
+body.light-mode .btn-outline-success:hover{
+    color:var(--light-color);
+}
+
+/* FOOTER */
+
+body.light-mode #foot{
+    background: var(--light-color);
+}
+
+body.light-mode #foot .nav-link,
+body.light-mode #foot p,
+body.light-mode #foot li{
+    color: var(--secondary-color);
+}
+
+/* ACCORDION */
+
+body.light-mode .accordion-item{
+    background: var(--light-color);
+}
+
+body.light-mode .accordion-button{
+    background: var(--light-color);
+    color: var(--secondary-color);
+}
+
+body.light-mode .accordion-body{
+    background: var(--light-color);
+    color: var(--secondary-color);
+}
+/* CORRECTION TEXTES MODE CLAIR */
+
+body.light-mode p,
+body.light-mode li,
+body.light-mode small,
+body.light-mode span{
+    color: var(--secondary-color) ;
+}
+
+/* SECTION ABOUT */
+
+body.light-mode #hero p{
+    color: var(--secondary-color) ;
+}
+
+/* HERO CONTENT */
+
+body.light-mode .hero-content p{
+    color: var(--secondary-color) ;
+}
+
