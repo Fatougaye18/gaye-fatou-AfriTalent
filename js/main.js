@@ -3,7 +3,7 @@
 const themeToggle =
 document.getElementById("theme-toggle");
 
-// Vérification localStorage
+/*Vérification localStorage*/
 if(localStorage.getItem("theme") === "light"){
 
     document.body.classList.add("light-mode");
@@ -54,7 +54,7 @@ window.addEventListener("scroll", () => {
 const backToTop =
 document.getElementById("backToTop");
 
-// Apparition bouton
+/* Apparition bouton */
 window.addEventListener("scroll", () => {
 
     if(window.scrollY > 300){
@@ -68,7 +68,7 @@ window.addEventListener("scroll", () => {
 
 });
 
-// Scroll smooth
+/* Scroll smooth */
 backToTop.addEventListener("click", () => {
 
     window.scrollTo({
@@ -76,5 +76,87 @@ backToTop.addEventListener("click", () => {
         top:0,
         behavior:"smooth"
     });
+
+});
+/*FADE IN AU SCROLL*/
+
+const fadeElements = document.querySelectorAll(".fade-in");
+
+const fadeObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach((entry) => {
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("show");
+
+        }
+
+    });
+
+}, {
+    threshold: 0.2
+});
+
+fadeElements.forEach((element) => {
+
+    fadeObserver.observe(element);
+
+});
+
+
+/* COMPTEURS ANIMES */
+
+const counters = document.querySelectorAll(".counter-number");
+
+const counterObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach((entry) => {
+
+        if(entry.isIntersecting){
+
+            const counter = entry.target;
+
+            const target = +counter.getAttribute("data-target");
+
+            let count = 0;
+
+            const updateCounter = () => {
+
+                const increment = target / 100;
+
+                if(count < target){
+
+                    count += increment;
+
+                    counter.innerText = Math.floor(count);
+
+                    requestAnimationFrame(updateCounter);
+
+                }
+
+                else{
+
+                    counter.innerText = target;
+
+                }
+
+            };
+
+            updateCounter();
+
+            counterObserver.unobserve(counter);
+
+        }
+
+    });
+
+}, {
+    threshold: 0.5
+});
+
+counters.forEach((counter) => {
+
+    counterObserver.observe(counter);
 
 });
