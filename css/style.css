@@ -210,25 +210,6 @@ body{
     text-align:center;
 }
 
-/* CTA */
-
-.cta-section{
-    position:relative;
-    background:url('../images/cta.webp') center/cover;
-    padding:120px 0;
-    margin-top:70px;
-}
-
-.cta-overlay{
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,0.7);
-}
-
-.cta-content{
-    position:relative;
-    z-index:2;
-}
 
 /* FOOTER */
 
@@ -649,7 +630,7 @@ body{
     margin-bottom:20px;
     padding-top:90px;
 }
-/* COMMIT4 AFRITALENT */
+/* COMMIT4 */
 
 /* HERO ASYMETRIQUE */
 
@@ -738,13 +719,7 @@ body{
     height:100%;
 }
 
-.bento-item:nth-child(1){
-    grid-row:span 2;
-}
 
-.bento-item:nth-child(4){
-    grid-column:span 2;
-}
 
 /* SERVICE CARDS */
 

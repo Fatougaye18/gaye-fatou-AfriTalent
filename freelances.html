@@ -131,31 +131,31 @@
         <!-- FILTRES -->
         <section class="container text-center my-5">
 
-            <button class="btn btn-outline-success m-2">
-                Tous
-            </button>
+    <button class="btn btn-outline-success m-2 filter-btn" data-filter="all">
+        Tous
+    </button>
 
-            <button class="btn btn-outline-success m-2">
-                Data & IA
-            </button>
+    <button class="btn btn-outline-success m-2 filter-btn" data-filter="data">
+        Data & IA
+    </button>
 
-            <button class="btn btn-outline-success m-2">
-                Développement Web
-            </button>
+    <button class="btn btn-outline-success m-2 filter-btn" data-filter="web">
+        Développement Web
+    </button>
 
-            <button class="btn btn-outline-success m-2">
-                Design Graphique
-            </button>
+    <button class="btn btn-outline-success m-2 filter-btn" data-filter="design">
+        Design Graphique
+    </button>
 
-            <button class="btn btn-outline-success m-2">
-                Rédaction Tech
-            </button>
+    <button class="btn btn-outline-success m-2 filter-btn" data-filter="redaction">
+        Rédaction Tech
+    </button>
 
-            <button class="btn btn-outline-success m-2">
-                DevOps & Cloud
-            </button>
+    <button class="btn btn-outline-success m-2 filter-btn" data-filter="devops">
+        DevOps & Cloud
+    </button>
 
-        </section>
+</section>
 
         <!-- FREELANCES -->
         <section class="container pb-5">
@@ -163,7 +163,7 @@
             <div class="row g-4">
 
                 <!-- CARD 1 -->
-                <div class=" col-12 col-md-6 col-lg-4 ">
+                <div class=" col-12 col-md-6 col-lg-4 freelance-item" data-category="data">
 
                     <div class="card freelance-card p-4 text-center h-100">
 
@@ -185,16 +185,21 @@
 
                         <p>⭐⭐⭐⭐⭐</p>
 
-                        <button class="btn btn-outline-primary">
-                            Voir le profil
-                        </button>
+                        <button
+    class="btn btn-outline-primary"
+    data-bs-toggle="modal"
+    data-bs-target="#fatouModal">
+
+    Voir le profil
+
+</button>
 
                     </div>
 
                 </div>
 
                 <!-- CARD 2 -->
-                <div class=" col-12 col-md-6 col-lg-4 ">
+                <div class=" col-12 col-md-6 col-lg-4 freelance-item" data-category="web">
 
                     <div class="card freelance-card p-4 text-center h-100">
 
@@ -216,16 +221,21 @@
 
                         <p>⭐⭐⭐⭐⭐</p>
 
-                        <button class="btn btn-outline-primary">
-                            Voir le profil
-                        </button>
+                        <button
+    class="btn btn-outline-primary"
+    data-bs-toggle="modal"
+    data-bs-target="#moussaModal">
+
+    Voir le profil
+
+</button>
 
                     </div>
 
                 </div>
 
                 <!-- CARD 3 -->
-                <div class=" col-12 col-md-6 col-lg-4 ">
+                <div class=" col-12 col-md-6 col-lg-4 freelance-item" data-category="design">
 
                     <div class="card freelance-card p-4 text-center h-100">
 
@@ -247,16 +257,21 @@
 
                         <p>⭐⭐⭐⭐⭐</p>
 
-                        <button class="btn btn-outline-primary">
-                            Voir le profil
-                        </button>
+                        <button
+    class="btn btn-outline-primary"
+    data-bs-toggle="modal"
+    data-bs-target="#assaneModal">
+
+    Voir le profil
+
+</button>
 
                     </div>
 
                 </div>
 
                 <!-- CARD 4 -->
-                <div class=" col-12 col-md-6 col-lg-4 ">
+                <div class=" col-12 col-md-6 col-lg-4 freelance-item" data-category="data">
 
                     <div class="card freelance-card p-4 text-center h-100">
 
@@ -278,16 +293,21 @@
 
                         <p>⭐⭐⭐⭐⭐</p>
 
-                        <button class="btn btn-outline-primary">
-                            Voir le profil
-                        </button>
+                        <button
+    class="btn btn-outline-primary"
+    data-bs-toggle="modal"
+    data-bs-target="#antaModal">
+
+    Voir le profil
+
+</button>
 
                     </div>
 
                 </div>
 
                 <!-- CARD 5 -->
-                <div class=" col-12 col-md-6 col-lg-4 ">
+                <div class=" col-12 col-md-6 col-lg-4 freelance-item" data-category="devops">
 
                     <div class="card freelance-card p-4 text-center h-100">
 
@@ -309,16 +329,21 @@
 
                         <p>⭐⭐⭐⭐⭐</p>
 
-                        <button class="btn btn-outline-primary">
-                            Voir le profil
-                        </button>
+                        <button
+    class="btn btn-outline-primary"
+    data-bs-toggle="modal"
+    data-bs-target="#ibouModal">
+
+    Voir le profil
+
+</button>
 
                     </div>
 
                 </div>
 
                 <!-- CARD 6 -->
-                <div class=" col-12 col-md-6 col-lg-4 ">
+                <div class=" col-12 col-md-6 col-lg-4 freelance-item" data-category="ai">
 
                     <div class="card freelance-card p-4 text-center h-100">
 
@@ -340,13 +365,53 @@
 
                         <p>⭐⭐⭐⭐⭐</p>
 
-                        <button class="btn btn-outline-primary">
-                            Voir le profil
-                        </button>
+                        <button
+    class="btn btn-outline-primary"
+    data-bs-toggle="modal"
+    data-bs-target="#oumModal">
+
+    Voir le profil
+
+</button>
 
                     </div>
 
                 </div>
+                <div class="col-12 col-md-6 col-lg-4 freelance-item"
+     data-category="redaction">
+
+    <div class="card freelance-card p-4 text-center h-100">
+
+        <img src="icones/redactrice.webp"
+             class="img-fluid rounded-circle mb-3 freelance-img"
+             alt="Awa Ba">
+
+        <h4>Awa Ba</h4>
+
+        <p>Rédactrice Tech</p>
+
+        <p>
+            Rédaction d'articles techniques, documentation et contenu SEO.
+        </p>
+
+        <p class="fw-bold">
+            8 000 FCFA/h
+        </p>
+
+        <p>⭐⭐⭐⭐⭐</p>
+
+        <button
+    class="btn btn-outline-primary"
+    data-bs-toggle="modal"
+    data-bs-target="#fatouModal">
+
+    Voir le profil
+
+</button>
+
+    </div>
+
+</div>
 
             </div>
 
@@ -448,12 +513,12 @@
     ↑
 
 </button>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- JS -->
     <script src="js/main.js"></script>
-
 </body>
 
 </html>
