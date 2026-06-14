@@ -608,7 +608,7 @@ body{
     color: #39ff14;
 }
 
-#card{
+.equipe{
     background:linear-gradient(145deg,#081b4b,#102c84);
     color:var(--light-color);
     border-radius:28px;
@@ -618,7 +618,7 @@ body{
     border:1px solid rgba(255,255,255,0.08);
     box-shadow:0 0 20px rgba(0,191,255,0.15);
 }
-#acc{
+.acc{
     color:var(--primary-color);
     font-weight:700;
 }
