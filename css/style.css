@@ -1185,7 +1185,7 @@ main{
         #00bfff,
         #0066ff
     );
-
+ 
     border: none;
 
     color: var(--light-color);
@@ -1755,17 +1755,5 @@ body.light-mode #hero p{
 
 body.light-mode .hero-content p{
     color: var(--secondary-color) ;
-}
-/*FADE IN ANIMATION*/
-
-.fade-in{
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 1s ease;
-}
-
-.fade-in.show{
-    opacity: 1;
-    transform: translateY(0);
 }
 
